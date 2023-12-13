@@ -29,10 +29,10 @@ jobs:
       - name: Checkout    
         uses: actions/checkout@v3
       
-      - name: Configure AWS credentials from Test account
+      - name: Configure AWS credentials
         uses: aws-actions/configure-aws-credentials@v1
         with:
-          role-to-assume: arn:aws:iam::111111111111:role/my-github-actions-role-test
+          role-to-assume: arn:aws:iam::166067708426:oidc-provider/token.actions.githubusercontent.com
           aws-region: eu-west-2
 
       - name: Copy files to the S3 website bucket with the AWS CLI

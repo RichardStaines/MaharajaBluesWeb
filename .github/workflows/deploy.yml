@@ -32,7 +32,7 @@ jobs:
       - name: Configure AWS credentials
         uses: aws-actions/configure-aws-credentials@v4
         with:
-          role-to-assume: arn:aws:iam::166067708426:role/S3-mb-deploy
+          role-to-assume: ${{ secrets.AWS_ROLE_ARN }}
           aws-region: eu-west-2
 
       - name: Copy files to the S3 website bucket with the AWS CLI

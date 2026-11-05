@@ -8,11 +8,10 @@
 
 </head>
 <style>
-body {background-image:url('resources/tajmahal.jpg');
+body {
+background-image:url('resources/tajmahal.jpg');
  background-size:100% 100%;
  background-attachment:fixed;
- margin-right:5%;
- margin-left:5%; 
 }
 #bio-eng,#bio-esp,#bio-cym,#bio-jp,#bio {background-image:url('resources/scroll.png');
  background-size:104% 110%;
@@ -28,51 +27,208 @@ a.one:link {color:blue;}
 a.one:visited {color:silver;}
 a.one:hover {color:blue;}
 </style> 
+
+<style>
+#headerpanel {
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+    padding-top:10px;
+    padding-bottom:10px;
+	background-image: url('resources/tajmahal.jpg');
+    background-attachment: fixed;
+}
+#maincontent {
+    margin-top: 360px;
+}
+</style>
+
 <BODY text=black link=darkred vlink=golden>
 
-  <div id="fb-root"></div>
-  <script async defer crossorigin="anonymous" 
-        src="https://connect.facebook.net/en_US/sdk.js#xfbml=1
-             &version={graph-api-version}
-             &appId={your-facebook-app-id}" 
-        nonce="FOKrbAYI">
-  </script>
-  
+<div id="headerpanel">
+	  
 <p>
-<center><h1>Maharaja Blues・マハラジャﾌﾞﾙズ</h1></center>
+<center>
+<img src="resources/mb-banner.png"
+     alt="Maharaja Blues・マハラジャﾌﾞﾙズ"
+	 style="max-width:20%; height:auto;
+     ">
+
+</center>
 <center><h2>Welcome・Croeso・Bienvenidos・Bienvenue・ようこそ</h1></center>
 </p>
 
 <!-- <center><img src="resources/Banner.jpg" alt="Maharaja Blues on iTunes"/></center> -->
 
 <br>
-Follow us on Facebook by clicking the Like button:
+
 <table>
 <tr>
 
+<td width="10%">
+<a href="https://maharajablues.teemill.com/" 
+   style="
+      display:inline-block;
+      background:#c69214;
+      color:white;
+      font-family:Arial, sans-serif;
+      font-size:16px;
+      font-weight:bold;
+      padding:15px 30px;
+      text-decoration:none;
+      border-radius:8px;
+      box-shadow:0 4px 8px rgba(0,0,0,0.3);
+      transition:all 0.3s ease;
+   "
+   onmouseover="this.style.background='#ff7a00'"
+   onmouseout="this.style.background='#c69214' ">
+   👕 Tee-Shirts & Merchandise
+</a>
+</td>
+
+<td width="10%">
+<a href="https://maharajablues.blogspot.com/" 
+   style="
+      display:inline-block;
+      background:#ff4fa3;
+      color:white;
+      font-family:Arial, sans-serif;
+      font-size:16px;
+      font-weight:bold;
+      padding:15px 30px;
+      text-decoration:none;
+      border-radius:8px;
+      box-shadow:0 4px 8px rgba(0,0,0,0.3);
+      transition:all 0.3s ease;
+   "
+   onmouseover="this.style.background='#ff7a00' "
+   onmouseout="this.style.background='#ff4fa3' ">
+
+📖 Our Surreal Blog 🐻🐓🦩
+</a>
+</td>
+
+<td width="8%">
+<a href="https://elasticstage.com/maharajablues"
+   target="_blank"
+   style="
+      display:inline-block;
+      background:#6a1b9a;
+      color:white;
+      font-family:Arial, sans-serif;
+      font-size:16px;
+      font-weight:bold;
+      padding:15px 30px;
+      text-decoration:none;
+      border-radius:8px;
+      box-shadow:0 4px 8px rgba(0,0,0,0.3);
+      transition:all 0.3s ease;
+   "
+   onmouseover="this.style.background='#ff7a00'"
+   onmouseout="this.style.background='#6a1b9a' ">
+   💿 CDs & LPs
+</a>
+</td>
+
+<td width="10%">
+<a href="https://maharajablues.bandcamp.com/"
+   target="_blank"
+   style="
+      display:inline-block;
+      background:#1da0c3;
+      color:white;
+      font-family:Arial, sans-serif;
+      font-size:16px;
+      font-weight:bold;
+      padding:15px 30px;
+      text-decoration:none;
+      border-radius:8px;
+      box-shadow:0 4px 8px rgba(0,0,0,0.3);
+      transition:all 0.3s ease;
+   "
+   onmouseover="this.style.background='#ff7a00'"
+   onmouseout="this.style.background='#1da0c3';this.style.transform='scale(1)'">
+   🎵 Downloads & BandCamp
+</a>
+</td>
+
+<td width="10%">
+<a href="https://www.facebook.com/maharajablues"
+   target="_blank"
+   style="
+      display:inline-block;
+      background:#1877f2;
+      color:white;
+      font-family:Arial, sans-serif;
+      font-size:16px;
+      font-weight:bold;
+      padding:15px 30px;
+      text-decoration:none;
+      border-radius:8px;
+      box-shadow:0 4px 8px rgba(0,0,0,0.3);
+      transition:all 0.3s ease;
+   "
+   onmouseover="this.style.background='#ff7a00'"
+   onmouseout="this.style.background='#1877f2';this.style.transform='scale(1)'">
+   👍 Follow us on Facebook
+</a>
 </td>
 <td width="10%">
-  <!-- Your like button code -->
-  <div class="fb-like" 
-	   data-href="https://www.facebook.com/maharajablues"
-       data-width=""
-       data-layout="button_count" 
-       data-action="like" 
-       data-size="small"  
-       data-share="true">
-  </div>
-
-<div class="fb-like" data-href="https://www.facebook.com/maharajablues" data-layout="standard" data-action="like" data-show-faces="true" data-share="true"></div>
-
+<a href="https://www.instagram.com/maharajablues"
+   target="_blank"
+   style="
+      display:inline-block;
+      background:#d62976;
+      color:white;
+      font-family:Arial, sans-serif;
+      font-size:16px;
+      font-weight:bold;
+      padding:15px 30px;
+      text-decoration:none;
+      border-radius:8px;
+      box-shadow:0 4px 8px rgba(0,0,0,0.3);
+      transition:all 0.3s ease;
+   "
+   onmouseover="this.style.background='#ff7a00'"
+   onmouseout="this.style.background='#d62976';this.style.transform='scale(1)'">
+   📸 Follow us on Instagram
+</a>
 </td>
-<td width="63%">
-<a href="https://twitter.com/share" class="twitter-share-button" data-via="richardstaines">Tweet</a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 
-<a href="https://twitter.com/richardstaines" class="twitter-follow-button" data-show-count="false">Follow @richardstaines</a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
-
+<td width="10%">
+<a href="https://www.youtube.com/user/richardstaines"
+   target="_blank"
+   style="
+      display:inline-block;
+      background:#ff0000;
+      color:white;
+      font-family:Arial, sans-serif;
+      font-size:16px;
+      font-weight:bold;
+      padding:15px 30px;
+      text-decoration:none;
+      border-radius:8px;
+      box-shadow:0 4px 8px rgba(0,0,0,0.3);
+      transition:all 0.3s ease;
+   "
+   onmouseover="this.style.background='#ff7a00'"
+   onmouseout="this.style.background='#ff0000';this.style.transform='scale(1)'">
+   ▶ Maharaja Blues YouTube
+</a>
 </td>
+
+<td width="1%">
+</td>
+</tr>
+</table>
+
+
+<hr>
+</div>
+
+<div id="maincontent">
+
+<table>
 <td>
 <b>Select Language <br/>Click Flags -> </B>
 </td>
@@ -93,89 +249,8 @@ Follow us on Facebook by clicking the Like button:
 
 <hr>
 
+
 <br>
-<table>
-<tr>
-<td width="10%">
-<a href="https://maharajablues.teemill.com/" 
-   style="
-      display:inline-block;
-      background:#c69214;
-      color:white;
-      font-family:Arial, sans-serif;
-      font-size:18px;
-      font-weight:bold;
-      padding:15px 30px;
-      text-decoration:none;
-      border-radius:8px;
-      box-shadow:0 4px 8px rgba(0,0,0,0.3);
-      transition:all 0.3s ease;
-   "
-   onmouseover="this.style.background='#ff7a00';this.style.transform='scale(1.05)'"
-   onmouseout="this.style.background='#c69214';this.style.transform='scale(1)'">
-   👕 Maharaja Blues T-Shirts/Merch
-</a>
-</td>
-
-<td width="10%">
-<a href="https://maharajablues.blogspot.com/" 
-   style="
-      display:inline-block;
-      background:#ff4fa3;
-      color:white;
-      font-family:Arial, sans-serif;
-      font-size:18px;
-      font-weight:bold;
-      padding:15px 30px;
-      text-decoration:none;
-      border-radius:8px;
-      box-shadow:0 4px 8px rgba(0,0,0,0.3);
-      transition:all 0.3s ease;
-   "
-   onmouseover="this.style.background='#ff7a00';this.style.transform='scale(1.05)'"
-   onmouseout="this.style.background='#ff4fa3';this.style.transform='scale(1)'">
-
-📖 Maharaja Blues Blog 🐻🐓🦩
-</a>
-</td>
-
-<td width="10%">
-<a href="https://elasticstage.com/maharajablues"
-   target="_blank"
-   style="
-      display:inline-block;
-      background:#6a1b9a;
-      color:white;
-      font-family:Arial, sans-serif;
-      font-size:18px;
-      font-weight:bold;
-      padding:15px 30px;
-      text-decoration:none;
-      border-radius:8px;
-      box-shadow:0 4px 8px rgba(0,0,0,0.3);
-      transition:all 0.3s ease;
-   "
-   onmouseover="this.style.background='#ff7a00';this.style.transform='scale(1.05)'"
-   onmouseout="this.style.background='#6a1b9a';this.style.transform='scale(1)'">
-   💿 CDs & LPs
-</a>
-</td>
-
-<td width="12%">
-<h3><a target="_blank" href="http://www.facebook.com/maharajablues">Maharaja Blues Page on Facebook</a></h3>
-</td>
-<td width="1%">
-</td>
-<td width="10%">
-<h3><a target="_blank" href="http://www.youtube.com/user/richardstaines">Our Youtube Channel</a></h3>
-</td>
-<td width="1%">
-</td>
-</tr>
-</table>
-
-
-<hr>
 
 
 <script>
@@ -454,11 +529,10 @@ Click on event, to view more details.
 <br/>
 <br/>
 
-<h1><center>MP3 Sales<center/></h1>
+<h1>&nbsp</h1>
 
 <br/>
-<h2><center><a target="_blank" href="https://amazon.co.uk/gp/product/B00X0XNODY/ref=as_li_tl?ie=UTF8&camp=1634&creative=6738&creativeASIN=B00X0XNODY&linkCode=as2&tag=mahablue-21&linkId=e841d13ff34f3c0a3f577b0dd3cc9c04">Maharaja Blues Live on Amazon UK</a><img src="//ir-uk.amazon-adsystem.com/e/ir?t=mahablue-21&l=am2&o=2&a=B00X0XNODY" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
-<center/></h2>
+<h2>&nbsp</h2>
 <br/>
 <br/>
 <br/>
@@ -586,5 +660,7 @@ Click on event, to view more details.
 <hr>
 
 <br/>
+</div>
+
 </body>
 </html>

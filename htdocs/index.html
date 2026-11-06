@@ -240,7 +240,13 @@ a.one:hover {color:blue;}
    rel="noopener noreferrer">
     <img src="resources/Spotify_Primary_Logo_RGB_Green.png"
          alt="Listen on Spotify"
-         style="height:50px; width:auto;">
+         style="
+            height:50px;
+            width:auto;
+            transition:transform 0.3s ease;
+         "
+         onmouseover="this.style.transform='scale(1.1)'"
+         onmouseout="this.style.transform='scale(1)'">
 </a>
 </center>
 </td>

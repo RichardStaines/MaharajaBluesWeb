@@ -44,21 +44,37 @@ a.one:hover {color:blue;}
 #maincontent {
     margin-top: 400px;
 }
+.container {
+    display: flex;
+    align-items: center;
+}
+
+.left-image {
+    width: 50%;
+}
+
+.center-image {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
 </style>
 
 <BODY text=black link=darkred vlink=golden>
 
 <div id="headerpanel">
 	  
-<p>
-<center>
-<img src="resources/mb-banner.png"
+<div class="container">
+    <img class="left-image" src="resources/round.png"
+     alt="Maharaja Blues logo"
+	 style="width:10%; height:auto;  margin-left:20px; margin-top:10px;">
+    <!--img class="center-image" src="resources/mb-banner.png"
      alt="Maharaja Blues・マハラジャﾌﾞﾙズ"
-	 style="max-width:20%; height:auto;
-     ">
+	 style="max-width:20%; height:auto;" -->
+	<center><h2 style="margin-left:20px;">Welcome・Croeso・Bienvenidos・Bienvenue・ようこそ・स्वागत</h1></center>	 
+</div>
 
-</center>
-<center><h2>Welcome・Croeso・Bienvenidos・Bienvenue・ようこそ・स्वागत</h1></center>
+
 </p>
 
 <!-- <center><img src="resources/Banner.jpg" alt="Maharaja Blues on iTunes"/></center> -->
